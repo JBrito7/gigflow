@@ -1,5 +1,4 @@
 # 🎫 GigFlow — Ticket Booking System  
-PHP MySQL HTML5 CSS3 JavaScript Bootstrap
 
 This is a school project simulating a ticket booking system for events. All content, including events, bookings, and admin data, is fictional and used solely for educational purposes.
 

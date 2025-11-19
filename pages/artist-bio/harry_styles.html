@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Icons Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/artist-bio.css" />
+    <title>GigFlow</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.php">
+            <img
+              src="../../images/black-logo-thumb.png"
+              alt="Logo"
+              width="100"
+              height="60"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/agenda.php">AGENDA</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="../../pages/register.php"
+                  aria-label="Register"
+                  >REGISTAR</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="../../pages/login.php"
+                  aria-label="Login"
+                  >LOGIN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="../../pages/profile.php"
+                  aria-label="Meu Perfil"
+                  ><i class="fa-solid fa-user"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="../../pages/cart.php"
+                  aria-label="Carrinho"
+                  ><i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </li>
+            </ul>
+            <form
+              class="d-flex ms-lg-3 position-relative"
+              role="search"
+              id="searchForm"
+              autocomplete="off"
+            >
+              <input
+                class="form-control me-2"
+                type="search"
+                id="searchInput"
+                placeholder="Procurar eventos"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <span class="material-symbols-outlined"> search </span>
+              </button>
+              <div
+                id="searchResults"
+                class="list-group position-absolute w-100 mt-5 shadow"
+                style="z-index: 1000; display: none"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="artist_details">
+        <div class="container py-5 mt-5">
+          <!-- Banner -->
+          <div class="artist-banner text-center mt-5 mb-5">
+            <img
+              src="../../images/shows/pop/harry-styles.jpg"
+              alt="Harry Styles"
+              class="artist-img"
+            />
+            <h1>Harry Styles</h1>
+          </div>
+
+          <hr />
+
+          <!-- Bio -->
+          <div class="mb-5">
+            <h2>Biografia</h2>
+            <p>
+              Harry Styles (nascido em 1994, Redditch, Inglaterra) é cantor,
+              compositor e ator. <br />
+              Famoso por ter integrado a boy band One Direction, Harry tornou-se
+              artista solo de sucesso internacional, reconhecido por seu estilo
+              musical eclético e performances marcantes.
+            </p>
+          </div>
+
+          <!-- Spotify and YouTube -->
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <h3>Ouça no Spotify</h3>
+              <iframe
+                src="https://open.spotify.com/embed/artist/6KImCVD70vtIoJWnq6nGn3"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+                title="Harry Styles no Spotify"
+              ></iframe>
+            </div>
+
+            <div class="col-md-6">
+              <h3>Assista no YouTube</h3>
+              <iframe
+                src="https://www.youtube.com/embed?listType=user_uploads&list=UCZFWPqqPkFlNwIxcpsLOwew"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen
+                title="Harry Styles no Youtube"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="mb-5">
+            <h3>Redes Sociais</h3>
+            <div class="social-icons">
+              <a
+                href="https://instagram.com/harrystyles"
+                target="_blank"
+                rel="noopener"
+                title="Harry Styles no Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/HarryStyles"
+                target="_blank"
+                rel="noopener"
+                title="Harry Styles no Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.hstyles.co.uk/"
+                target="_blank"
+                rel="noopener"
+                title="Site oficial de Harry Styles"
+                ><i class="fas fa-globe"></i
+              ></a>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Event Info -->
+          <div class="mb-5">
+            <h3>Próximo Evento</h3>
+            <p><strong>Harry Styles - Love On Tour</strong></p>
+            <p>⏱️ <strong>17 de Setembro de 2025, 20:00</strong></p>
+            <p>📍 <strong>O2 Arena, Londres, UK</strong></p>
+            <form class="add-to-cart-form d-inline" data-event-id="7">
+              <button type="submit" class="btn-color">Comprar Bilhetes</button>
+            </form>
+          </div>
+
+          <!-- Event Location -->
+          <div class="mb-5">
+            <h3>Localização</h3>
+            <iframe
+              src="https://www.google.com/maps?q=O2+Arena,+Londres,+UK&output=embed"
+              width="100%"
+              height="350"
+              allowfullscreen
+              loading="lazy"
+              title="Localização do evento"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-4 mt-5">
+      <div class="container text-center">
+        <div class="row align-items-center gy-4">
+          <!-- Social Media -->
+          <div class="col-md-4">
+            <h5>Redes Sociais</h5>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Logo -->
+          <div class="col-md-4">
+            <img
+              src="../../images/black-logo-thumb.png"
+              alt="Gig Flow Logo"
+              class="footer-logo"
+            />
+          </div>
+
+          <!-- Contact -->
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <p><i class="fa-solid fa-phone"></i> 00352 098 098 055</p>
+            <p><i class="fa-solid fa-house"></i> Rue Morgane Lai, 22</p>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="text-center mb-0">
+          &copy; 2025 GigFlow. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script>
+      // Add to cart function
+      $(".add-to-cart-form").on("submit", function (e) {
+        e.preventDefault();
+        var eventId = $(this).data("event-id");
+
+        $.post(
+          "../../php/add_cart.php",
+          { event_id: eventId },
+          function (response) {
+            alert(response.message);
+          },
+          "json"
+        );
+      });
+
+      // Search Bar function
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+
+      searchInput.addEventListener("keyup", () => {
+        const query = searchInput.value.trim();
+
+        if (query.length < 2) {
+          searchResults.style.display = "none";
+          return;
+        }
+
+        fetch(`../../php/search_events.php?q=${encodeURIComponent(query)}`)
+          .then(res => res.text())
+          .then(html => {
+            searchResults.innerHTML = html;
+            searchResults.style.display = html.trim() ? "block" : "none";
+          })
+        .catch(err => console.error(err));
+      });
+
+    document.addEventListener("click", (e) => {
+      if (!searchResults.contains(e.target) && e.target !== searchInput) {
+        searchResults.style.display = "none";
+      }
+    });
+    </script>
+  </body>
+</html>
